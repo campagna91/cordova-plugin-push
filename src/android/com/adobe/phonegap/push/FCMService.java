@@ -25,7 +25,7 @@ import android.os.Build;
 import android.os.Bundle;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationCompat.WearableExtender;
-import android.support.v4.app.RemoteInput;
+import androidx.core.app.RemoteInput;
 import android.text.Html;
 import android.text.Spanned;
 import android.util.Log;
