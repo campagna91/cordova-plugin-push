@@ -49,7 +49,7 @@
         </intent-filter>
       </service>
 
-      <service android:exported="true" android:name="com.adobe.phonegap.push.PushInstanceIDListenerService">
+      <service android:exported="false" android:name="com.adobe.phonegap.push.PushInstanceIDListenerService">
         <intent-filter>
           <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
         </intent-filter>
