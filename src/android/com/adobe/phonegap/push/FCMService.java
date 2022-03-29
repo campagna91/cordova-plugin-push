@@ -637,7 +637,7 @@ public class FCMService extends FirebaseMessagingService implements PushConstant
             pIntent = PendingIntent.getBroadcast(
               this, uniquePendingIntentRequestCode,
               intent,
-              PendingIntent.FLAG_UPDATE_CURRENT
+              PendingIntent.FLAG_IMMUTABLE
             );
           }
 
