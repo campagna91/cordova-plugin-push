@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  id="@havesource/cordova-plugin-push" version="4.0.0">
+  xmlns:android="http://schemas.android.com/apk/res/android" id="@havesource/cordova-plugin-push" version="4.0.0">
 
   <name>Cordova Push Plugin</name>
   <description>Enable receiving push notifications on Android and iOS devices. Android uses Firebase Cloud Messaging. iOS uses Apple APNS Notifications.</description>
@@ -93,6 +92,10 @@
   </platform>
 
   <platform name="ios">
+
+    <hook type="after_prepare" src="hooks/ios/after_prepare/add-privacy-files.js" />
+
+
     <preference name="IOS_FIREBASE_MESSAGING_VERSION" default="~> 8.1.1"/>
 
     <config-file target="config.xml" parent="/*">
